@@ -1,0 +1,23 @@
+{
+  "api": {
+    "base_url": "https://api.deepseek.com",
+    "key_env": "DEEPSEEK_API_KEY",
+    "timeout_sec": 120,
+    "max_retries": 3
+  },
+  "models": [
+    "deepseek-chat",
+    "deepseek-reasoner"
+  ],
+  "prompts": {
+    "v1": "prompts/v1.txt",
+    "v2": "prompts/v2.txt"
+  },
+  "temperature": 0,
+  "max_tokens": {
+    "default": 1024,
+    "deepseek-reasoner": 8192
+  },
+  "judge_model": "deepseek-chat",
+  "questions": "data/questions.jsonl"
+}
